@@ -3,10 +3,25 @@ package main
 import "fmt"
 
 func main() {
-	const name, age = "Chris", 37
-	fmt.Printf("%s is %d years old. 😂\n", name, age)
-	
-	fmt.Printf(`	This is a raw string literal. 😜
-	We can put anything in here without newlines and escaping.
-	It's pretty legit.`)
+	adams := 42
+	fmt.Printf("42 as binary, %b \n", adams)
+	fmt.Printf("42 as hex, %x \n", adams)
+
+	a, b, c, d, e, f := 0, 1, 56734, 3, 4, 5
+	fmt.Printf(`
+    Values as binary:
+    a: %b,
+    b: %b,
+    c: %b,
+    d: %b,
+    e: %b,
+    f: %b`, a, b, c, d, e, f)
+	fmt.Printf(`
+    Values as decimal:
+    a: %d,
+    b: %d,
+    c: %d,
+    d: %d,
+    e: %d,
+    f: %d`, a, b, c, d, e, f)
 }
